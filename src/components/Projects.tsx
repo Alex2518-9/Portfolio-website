@@ -25,15 +25,16 @@ export default function Projects() {
   return (
     <section id="work" className="border-t border-line bg-surface/40">
       <div className="mx-auto max-w-4xl px-6 py-20 sm:py-24">
-        <p className="font-mono text-sm text-accent">{japanese ? "制作実績" : theme === "light" ? "A selection of my work" : "# work"}</p>
+        <p className="font-mono text-sm text-accent">
+          {japanese
+            ? "制作実績"
+            : theme === "light"
+              ? "A selection of my work"
+              : "# work"}
+        </p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight text-text sm:text-3xl">
           {japanese ? "これまでの仕事" : "Selected work"}
         </h2>
-        <p className="mt-3 max-w-md text-sm text-text-muted">
-          {japanese
-            ? "これまでに携わったプロジェクトをご紹介します。"
-            : "A few placeholders for now — real project write-ups are coming soon."}
-        </p>
 
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
           {projects.map((project) => (
@@ -47,7 +48,11 @@ export default function Projects() {
                   type="button"
                   className="project-video-preview"
                   onClick={() => setActiveVideo(project)}
-                  aria-label={japanese ? `${project.jaName ?? project.name}の動画を見る` : `Play ${project.name} video`}
+                  aria-label={
+                    japanese
+                      ? `${project.jaName ?? project.name}の動画を見る`
+                      : `Play ${project.name} video`
+                  }
                 >
                   <Image
                     src={project.image}
@@ -56,7 +61,10 @@ export default function Projects() {
                     height={project.imageHeight ?? 1108}
                     className="aspect-[2.38] w-full object-cover"
                   />
-                  <span className="project-preview-play project-play-icon" aria-hidden="true">
+                  <span
+                    className="project-preview-play project-play-icon"
+                    aria-hidden="true"
+                  >
                     <svg viewBox="0 0 24 24" fill="currentColor">
                       <path d="M8 5.8c0-.7.8-1.1 1.4-.7l10.1 6.2a.8.8 0 0 1 0 1.4L9.4 18.9c-.6.4-1.4 0-1.4-.7V5.8Z" />
                     </svg>
@@ -72,7 +80,7 @@ export default function Projects() {
                 />
               ) : null}
               <h3 className="text-base font-semibold text-text">
-                {japanese ? project.jaName ?? project.name : project.name}
+                {japanese ? (project.jaName ?? project.name) : project.name}
               </h3>
               <p className="mt-2 max-w-lg text-sm leading-relaxed text-text-muted">
                 {japanese ? project.jaDescription : project.description}
@@ -84,7 +92,11 @@ export default function Projects() {
                       type="button"
                       className="project-video-trigger"
                       onClick={() => setActiveVideo(project)}
-                      aria-label={japanese ? `${project.jaName ?? project.name}の動画を見る` : `Play ${project.name} video`}
+                      aria-label={
+                        japanese
+                          ? `${project.jaName ?? project.name}の動画を見る`
+                          : `Play ${project.name} video`
+                      }
                     >
                       <span className="project-play-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="currentColor">
@@ -101,7 +113,9 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <span>{japanese ? "コードを見てみる" : "Explore the code"}</span>
+                      <span>
+                        {japanese ? "コードを見てみる" : "Explore the code"}
+                      </span>
                       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M7 17 17 7M8 7h9v9" />
                       </svg>
@@ -159,7 +173,9 @@ export default function Projects() {
           <div className="project-video-modal">
             <div className="project-video-modal-header">
               <h3 id="project-video-title">
-                {japanese ? activeVideo.jaName ?? activeVideo.name : activeVideo.name}
+                {japanese
+                  ? (activeVideo.jaName ?? activeVideo.name)
+                  : activeVideo.name}
               </h3>
               <button
                 type="button"
@@ -179,7 +195,11 @@ export default function Projects() {
               autoPlay
               playsInline
               preload="metadata"
-              aria-label={japanese ? `${activeVideo.jaName ?? activeVideo.name}の動画` : `${activeVideo.name} video`}
+              aria-label={
+                japanese
+                  ? `${activeVideo.jaName ?? activeVideo.name}の動画`
+                  : `${activeVideo.name} video`
+              }
             >
               <source src={activeVideo.video} />
               {japanese
