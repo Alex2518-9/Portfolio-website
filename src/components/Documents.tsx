@@ -16,9 +16,9 @@ export default function Documents() {
       </h2>
       <p className="mt-3 max-w-md text-sm text-text-muted">
         {japanese
-          ? "個人情報を含む日本式の履歴書は、公開を控えているためご希望に応じてお送りします。"
-          : <>A Japanese-style 履歴書 is available directly on request — it
-            includes personal details I&apos;d rather not publish openly.</>}
+          ? "個人情報を含む日本式の履歴書は公開を控えており、必要に応じてご連絡いただければお送りします。"
+          : <>A Japanese-style resume is available on request — it includes
+            personal details I&apos;d prefer not to publish publicly.</>}
       </p>
 
       <div className="mt-8">

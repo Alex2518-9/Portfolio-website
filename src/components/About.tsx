@@ -51,7 +51,7 @@ export default function About() {
             <p>
               {japanese ? (
                 <>
-                  金融とITを学ぶなかでフロントエンド開発に出会い、その面白さに惹かれてこの道に進みました。直近の
+                  金融とITを学ぶ中でフロントエンド開発に出会い、その面白さに惹かれてこの道を選びました。直近の
                   <strong className="about-highlight">3年半</strong>は
                   <strong className="about-highlight">
                     IQVIAグループのB2i Healthcare
@@ -60,19 +60,17 @@ export default function About() {
                   <strong className="about-highlight">
                     フロントエンド開発者
                   </strong>
-                  として勤務。病院や医療機関で日々使われるレスポンシブWebアプリ
+                  として働き、病院や医療機関で日々使われるレスポンシブWebアプリ
                   <strong className="about-highlight">「Snowray」</strong>
-                  の開発・保守を担当し、各国のデザイナーやバックエンドエンジニアと協力してきました。
+                  の開発と保守を担当し、各国のデザイナーやバックエンドエンジニアと協力してきました。
                 </>
               ) : (
                 <>
-                  I started out studying finance and IT, and picked up frontend
-                  development along the way — it stuck. For the past{" "}
+                  I started by studying finance and IT, and discovered frontend
+                  development along the way — it was a natural fit. For the past{" "}
                   <strong className="about-highlight">3.5 years</strong>
-                  I&apos;ve worked as a{" "}
-                  <strong className="about-highlight">
-                    frontend developer
-                  </strong>{" "}
+                  , I&apos;ve worked as a{" "}
+                  <strong className="about-highlight">frontend developer</strong>{" "}
                   at
                   <strong className="about-highlight">
                     {" "}
@@ -81,8 +79,8 @@ export default function About() {
                   , building and maintaining{" "}
                   <strong className="about-highlight">Snowray</strong>, a
                   responsive web app used daily by hospitals and other medical
-                  institutions, working closely with designers and backend
-                  engineers on a distributed team.
+                  institutions. I&apos;ve worked closely with designers and backend
+                  engineers across a distributed team.
                 </>
               )}
             </p>
@@ -93,33 +91,34 @@ export default function About() {
                   に移住してから、
                   <strong className="about-highlight">日本語</strong>
                   と日本のテック業界について学んでいます。
+                  これまでの経験を活かしながら、
                   <strong className="about-highlight">Flutter</strong>
-                  でモバイル開発にも挑戦し、
+                  を使ったモバイル開発にも挑戦し、
                   <strong className="about-highlight">Python</strong>
-                  も学びながら、日々使われるプロダクトをより幅広く作れるよう取り組んでいます。
+                  も学びながら、日々使われるプロダクトをより広く支えられるよう取り組んでいます。
                 </>
               ) : (
                 <>
                   Since moving to{" "}
-                  <strong className="about-highlight">Tokyo</strong> I&apos;ve
+                  <strong className="about-highlight">Tokyo</strong>, I&apos;ve
                   been learning
                   <strong className="about-highlight"> Japanese</strong>
-                  alongside the local tech scene, and I&apos;m now expanding
-                  from web into mobile with{" "}
-                  <strong className="about-highlight">Flutter</strong>, with
-                  some <strong className="about-highlight">Python</strong> on
-                  the side, so I can build for more of the products people use
-                  every day.
+                  and getting more familiar with the local tech scene. I&apos;m now
+                  expanding from web into mobile with{" "}
+                  <strong className="about-highlight">Flutter</strong>, while also
+                  building my <strong className="about-highlight">Python</strong>{" "}
+                  skills so I can contribute to a wider range of products people
+                  use every day.
                 </>
               )}
             </p>
             <p>
               {japanese ? (
-                "コード以外では、スキー、ボルダリング、武道を楽しんでいます。テクノロジーや日本文化について読むことも好きです。"
+                "コード以外では、スキー、ボルダリング、武道を楽しんでいます。テクノロジーや日本文化について学ぶことも好きです。"
               ) : (
                 <>
-                  Outside of code: skiing, bouldering, martial arts, and reading
-                  my way through anything about technology or Japanese culture.
+                  Outside of code, I enjoy skiing, bouldering, martial arts, and
+                  learning about technology and Japanese culture.
                 </>
               )}
             </p>

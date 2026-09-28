@@ -24,7 +24,7 @@ export default function Contact() {
         </h2>
         <p className="mt-3 max-w-md text-sm leading-relaxed text-text-muted">
           {japanese
-            ? "現在、日本でフロントエンドまたはモバイル開発職を探しています。採用中のチームの方は、ぜひお気軽にご連絡ください。"
+            ? "現在、日本でフロントエンドまたはモバイル開発のポジションを探しています。採用中のチームの方は、どうぞお気軽にご連絡ください。"
             : <>I&apos;m currently looking for a frontend or mobile development role
               in Japan. If your team is hiring, I&apos;d love to hear from you.</>}
         </p>

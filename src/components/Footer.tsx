@@ -18,7 +18,7 @@ export default function Footer() {
         <span>© {new Date().getFullYear()} Alex Téringer</span>
         <span>{japanese
           ? theme === "light" ? "Alex Téringer が制作" : "Next.js・TypeScript・Tailwind CSS で制作"
-          : theme === "light" ? "Designed & built by Alex Téringer" : "built with next.js · typescript · tailwind"}</span>
+          : theme === "light" ? "Designed and built by Alex Téringer" : "built with next.js · typescript · tailwind"}</span>
       </div>
     </footer>
   );

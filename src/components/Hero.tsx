@@ -18,7 +18,7 @@ export default function Hero() {
         style={{ animationDelay: "40ms" }}
       >
         {theme === "light"
-          ? japanese ? "日本で新しいチームを探しています" : "Open to frontend & mobile roles"
+          ? japanese ? "日本での次のチームを探しています" : "Open to frontend and mobile roles"
           : japanese ? "$ 自己紹介" : "$ whoami"}
       </p>
 
@@ -30,7 +30,7 @@ export default function Hero() {
           >
             {japanese
               ? "アレックス・テリンゲル — 日本を拠点に活動するフロントエンド・モバイル開発者。"
-              : <>Alex Téringer — frontend &amp; mobile developer, based in Japan.</>}
+              : <>Alex Téringer — frontend and mobile developer, based in Japan.</>}
           </h1>
 
           <p
@@ -38,11 +38,11 @@ export default function Hero() {
             style={{ animationDelay: "240ms" }}
           >
             {japanese
-              ? "React、Next.js、TypeScriptを使ったレスポンシブなWebアプリ開発に3年半携わってきました。直近では、病院で日々利用される医療プラットフォームを担当。現在はFlutterでモバイル開発にも取り組みながら、日本で次のチームを探しています。"
+              ? "React、Next.js、TypeScriptを使ったレスポンシブWebアプリの開発に3年半携わってきました。直近では、病院で日々利用される医療プラットフォームを担当し、現在はFlutterでモバイル開発にも取り組んでいます。日本で次のチームを探しています。"
               : <>3.5 years building responsive web apps with React, Next.js, and
                 TypeScript — most recently on a healthcare platform used daily by
-                hospitals. Now expanding into mobile with Flutter, and looking for
-                my next team in Japan.</>}
+                hospitals. I&apos;m now expanding into mobile with Flutter and looking
+                for my next team in Japan.</>}
           </p>
         </div>
 

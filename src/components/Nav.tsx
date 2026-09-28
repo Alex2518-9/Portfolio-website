@@ -108,7 +108,7 @@ export default function Nav() {
   const japanese = language === "ja";
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50  bg-ink/85 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 bg-ink/85 backdrop-blur-md">
       <nav className="mx-auto flex w-full max-w-4xl items-center justify-between gap-3 px-6 py-3.5">
         <a
           href="#top"
