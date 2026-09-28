@@ -43,4 +43,17 @@ export const projects: Project[] = [
     video: "/videos/meals_app.mp4",
     github: "https://github.com/Alex2518-9/Meals_app",
   },
+  {
+    name: "Rock Paper Scissors",
+    file: "rock-scissors-paper.tsx",
+    description: "A playful browser game built in React.",
+    jaName: "Rock Paper Scissors",
+    jaDescription: "Reactで作った、遊び心のあるブラウザゲームです。",
+    tags: ["React", "Game", "Frontend"],
+    image: "/images/rock-scissors-paper.png",
+    imageAlt: "Rock Paper Scissors game preview",
+    imageWidth: 1600,
+    imageHeight: 1200,
+    website: "https://rock-paper-scissor-a.vercel.app/",
+  },
 ];
