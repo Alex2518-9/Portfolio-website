@@ -79,6 +79,7 @@ export default function Projects() {
                     alt={project.imageAlt ?? project.name}
                     width={project.imageWidth ?? 2642}
                     height={project.imageHeight ?? 1108}
+                    loading={project.featured ? "eager" : "lazy"}
                     className={
                       project.featured
                         ? "project-featured-image"
