@@ -47,16 +47,34 @@ export const projects: Project[] = [
   {
     name: "Meals App",
     file: "meals-app.dart",
-    description: "A Flutter mobile app demo for exploring recipes and meal ideas.",
+    description:
+      "A Flutter mobile app demo for exploring recipes and meal ideas.",
     jaName: "Meals App",
-    jaDescription: "レシピや食事アイデアを探せるFlutter製モバイルアプリのデモです。",
-    tags: ["Flutter", "Mobile"],
+    jaDescription:
+      "レシピや食事アイデアを探せるFlutter製モバイルアプリのデモです。",
+    tags: ["Flutter", "Mobile", "Dart", "Riverpod"],
     image: "/images/meals-app-preview.jpg",
     imageAlt: "Meals App video preview",
     imageWidth: 1284,
     imageHeight: 2778,
     video: "/videos/meals_app.mp4",
     github: "https://github.com/Alex2518-9/Meals_app",
+  },
+  {
+    name: "Shopping List",
+    file: "shopping-list.dart",
+    description:
+      "A Flutter mobile app demo for creating and managing shopping lists.",
+    jaName: "Shopping List",
+    jaDescription:
+      "買い物リストを作成・管理するFlutter製モバイルアプリのデモです。",
+    tags: ["Flutter", "Mobile", "Dart", "Firebase"],
+    image: "/images/shopping-list-preview.png",
+    imageAlt: "Shopping List video preview",
+    imageWidth: 820,
+    imageHeight: 516,
+    video: "/videos/shopping_list.mp4",
+    github: "https://github.com/Alex2518-9/Shopping-list",
   },
   {
     name: "Rock Paper Scissors",
