@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import TerminalWindow from "./TerminalWindow";
 import { projects, type Project } from "@/data/projects";
 import { usePortfolioPreferences } from "./PortfolioPreferences";
@@ -41,15 +42,44 @@ export default function Projects() {
               title={project.file}
               className={project.featured ? "sm:col-span-2" : ""}
             >
+              {project.image && project.video ? (
+                <button
+                  type="button"
+                  className="project-video-preview"
+                  onClick={() => setActiveVideo(project)}
+                  aria-label={japanese ? `${project.jaName ?? project.name}の動画を見る` : `Play ${project.name} video`}
+                >
+                  <Image
+                    src={project.image}
+                    alt=""
+                    width={project.imageWidth ?? 2642}
+                    height={project.imageHeight ?? 1108}
+                    className="aspect-[2.38] w-full object-cover"
+                  />
+                  <span className="project-preview-play project-play-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8 5.8c0-.7.8-1.1 1.4-.7l10.1 6.2a.8.8 0 0 1 0 1.4L9.4 18.9c-.6.4-1.4 0-1.4-.7V5.8Z" />
+                    </svg>
+                  </span>
+                </button>
+              ) : project.image ? (
+                <Image
+                  src={project.image}
+                  alt={project.imageAlt ?? project.name}
+                  width={project.imageWidth ?? 2642}
+                  height={project.imageHeight ?? 1108}
+                  className="mb-5 aspect-[2.38] w-full rounded-lg border border-line object-cover"
+                />
+              ) : null}
               <h3 className="text-base font-semibold text-text">
                 {japanese ? project.jaName ?? project.name : project.name}
               </h3>
               <p className="mt-2 max-w-lg text-sm leading-relaxed text-text-muted">
                 {japanese ? project.jaDescription : project.description}
               </p>
-              {(project.video || project.github) && (
+              {(project.video || project.github || project.website) && (
                 <div className="project-actions mt-5">
-                  {project.video && (
+                  {project.video && !project.image && (
                     <button
                       type="button"
                       className="project-video-trigger"
@@ -72,6 +102,19 @@ export default function Projects() {
                       rel="noreferrer"
                     >
                       <span>{japanese ? "コードを見てみる" : "Explore the code"}</span>
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M7 17 17 7M8 7h9v9" />
+                      </svg>
+                    </a>
+                  )}
+                  {project.website && (
+                    <a
+                      className="project-github-link"
+                      href={project.website}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span>{japanese ? "サイトを見る" : "Visit website"}</span>
                       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M7 17 17 7M8 7h9v9" />
                       </svg>

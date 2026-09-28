@@ -6,8 +6,13 @@ export type Project = {
   jaName?: string;
   tags: string[];
   featured?: boolean;
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   video?: string;
   github?: string;
+  website?: string;
 };
 
 export const projects: Project[] = [
@@ -22,12 +27,17 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "Project Two",
-    file: "project-two.tsx",
-    description: "A one- or two-line summary of the problem this solved.",
-    jaName: "プロジェクト 2",
-    jaDescription: "解決した課題を紹介するプロジェクト概要です。",
-    tags: ["React", "API"],
+    name: "Japan World",
+    file: "japan-world.tsx",
+    description: "A website exploring Japan.",
+    jaName: "Japan World",
+    jaDescription: "日本を紹介するWebサイトです。",
+    tags: ["Next.js", "React", "Tailwind CSS"],
+    image: "/images/japan.png",
+    imageAlt: "Japan World website",
+    imageWidth: 2642,
+    imageHeight: 1108,
+    website: "https://japan-world.vercel.app/",
   },
   {
     name: "Meals App",
@@ -36,6 +46,10 @@ export const projects: Project[] = [
     jaName: "Meals App",
     jaDescription: "Flutterで開発したモバイルアプリのデモです。",
     tags: ["Flutter", "Mobile"],
+    image: "/images/meals-app-preview.jpg",
+    imageAlt: "Meals App video preview",
+    imageWidth: 1284,
+    imageHeight: 2778,
     video: "/videos/meals_app.mp4",
     github: "https://github.com/Alex2518-9/Meals_app",
   },

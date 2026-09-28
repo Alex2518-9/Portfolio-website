@@ -429,6 +429,37 @@ body {
   border-color: var(--accent);
 }
 
+.project-video-preview {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface-alt);
+  padding: 0;
+  cursor: pointer;
+}
+
+.project-video-preview:hover {
+  border-color: var(--accent);
+}
+
+.project-preview-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  transform: translate(-50%, -50%);
+}
+
+.project-preview-play svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .project-github-link {
   padding: 0.72rem 0.95rem;
   text-decoration: none;
