@@ -409,6 +409,29 @@ body {
   gap: 0.75rem;
 }
 
+.project-featured-layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.project-featured-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: #fff;
+  padding: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .project-featured-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.85fr);
+    align-items: center;
+    gap: 1.75rem;
+  }
+}
+
 .project-video-trigger,
 .project-github-link {
   display: inline-flex;

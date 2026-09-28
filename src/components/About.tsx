@@ -11,9 +11,9 @@ const facts = [
   },
   {
     label: "most_recent",
-    value: "Frontend Dev @ B2i Healthcare",
+    value: "Frontend Dev @ B2i Healthcare, an IQVIA business",
     jaLabel: "直近の仕事",
-    jaValue: "B2i Healthcare フロントエンド開発",
+    jaValue: "B2i Healthcare, an IQVIA business フロントエンド開発",
   },
   {
     label: "education",
@@ -53,8 +53,13 @@ export default function About() {
                 <>
                   金融とITを学ぶなかでフロントエンド開発に出会い、その面白さに惹かれてこの道に進みました。直近の
                   <strong className="about-highlight">3年半</strong>は
-                  <strong className="about-highlight">IQVIAグループのB2i Healthcare</strong>
-                  で<strong className="about-highlight">フロントエンド開発者</strong>
+                  <strong className="about-highlight">
+                    IQVIAグループのB2i Healthcare
+                  </strong>
+                  で
+                  <strong className="about-highlight">
+                    フロントエンド開発者
+                  </strong>
                   として勤務。病院や医療機関で日々使われるレスポンシブWebアプリ
                   <strong className="about-highlight">「Snowray」</strong>
                   の開発・保守を担当し、各国のデザイナーやバックエンドエンジニアと協力してきました。
@@ -64,9 +69,17 @@ export default function About() {
                   I started out studying finance and IT, and picked up frontend
                   development along the way — it stuck. For the past{" "}
                   <strong className="about-highlight">3.5 years</strong>
-                  I&apos;ve worked as a <strong className="about-highlight">frontend developer</strong> at
-                  <strong className="about-highlight"> B2i Healthcare (an IQVIA business)</strong>,
-                  building and maintaining <strong className="about-highlight">Snowray</strong>, a
+                  I&apos;ve worked as a{" "}
+                  <strong className="about-highlight">
+                    frontend developer
+                  </strong>{" "}
+                  at
+                  <strong className="about-highlight">
+                    {" "}
+                    B2i Healthcare (an IQVIA business)
+                  </strong>
+                  , building and maintaining{" "}
+                  <strong className="about-highlight">Snowray</strong>, a
                   responsive web app used daily by hospitals and other medical
                   institutions, working closely with designers and backend
                   engineers on a distributed team.
@@ -77,20 +90,26 @@ export default function About() {
               {japanese ? (
                 <>
                   <strong className="about-highlight">東京</strong>
-                  に移住してから、<strong className="about-highlight">日本語</strong>
+                  に移住してから、
+                  <strong className="about-highlight">日本語</strong>
                   と日本のテック業界について学んでいます。
                   <strong className="about-highlight">Flutter</strong>
-                  でモバイル開発にも挑戦し、<strong className="about-highlight">Python</strong>
+                  でモバイル開発にも挑戦し、
+                  <strong className="about-highlight">Python</strong>
                   も学びながら、日々使われるプロダクトをより幅広く作れるよう取り組んでいます。
                 </>
               ) : (
                 <>
-                  Since moving to <strong className="about-highlight">Tokyo</strong> I&apos;ve been learning
+                  Since moving to{" "}
+                  <strong className="about-highlight">Tokyo</strong> I&apos;ve
+                  been learning
                   <strong className="about-highlight"> Japanese</strong>
                   alongside the local tech scene, and I&apos;m now expanding
-                  from web into mobile with <strong className="about-highlight">Flutter</strong>, with
-                  some <strong className="about-highlight">Python</strong> on the side, so I can build
-                  for more of the products people use every day.
+                  from web into mobile with{" "}
+                  <strong className="about-highlight">Flutter</strong>, with
+                  some <strong className="about-highlight">Python</strong> on
+                  the side, so I can build for more of the products people use
+                  every day.
                 </>
               )}
             </p>

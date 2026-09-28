@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Inter } from "next/font/google";
 import { PortfolioPreferences } from "@/components/PortfolioPreferences";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const jetbrains = JetBrains_Mono({
@@ -16,9 +17,41 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Téringer — Frontend & Mobile Developer",
+  metadataBase: SITE_URL,
+  title: "Alex Téringer | Frontend & Mobile Developer in Tokyo",
   description:
-    "Frontend and mobile developer based in Japan, building with React, TypeScript, Next.js, and Tailwind CSS.",
+    "Frontend and mobile developer in Tokyo, Japan, with 3.5 years of experience building healthcare web apps using React, Next.js, and TypeScript.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "Alex Téringer | Frontend & Mobile Developer in Tokyo",
+    description:
+      "Frontend and mobile developer in Tokyo, Japan, with 3.5 years of experience building healthcare web apps using React, Next.js, and TypeScript.",
+    siteName: "Alex Téringer",
+    locale: "en_US",
+    images: [
+      {
+        url: "/images/smallProfile.jpg",
+        width: 640,
+        height: 960,
+        alt: "Portrait of Alex Téringer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alex Téringer | Frontend & Mobile Developer in Tokyo",
+    description:
+      "Frontend and mobile developer in Tokyo, Japan, with 3.5 years of experience building healthcare web apps using React, Next.js, and TypeScript.",
+    images: ["/images/smallProfile.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
