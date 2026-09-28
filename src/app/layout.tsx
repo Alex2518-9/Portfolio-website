@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
   robots: {
     index: true,
     follow: true,
