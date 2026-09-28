@@ -6,6 +6,8 @@ export type Project = {
   jaName?: string;
   tags: string[];
   featured?: boolean;
+  video?: string;
+  github?: string;
 };
 
 export const projects: Project[] = [
@@ -28,11 +30,13 @@ export const projects: Project[] = [
     tags: ["React", "API"],
   },
   {
-    name: "Project Three",
-    file: "project-three.dart",
-    description: "What you built and the impact it had.",
-    jaName: "プロジェクト 3",
-    jaDescription: "制作したものと、その成果を紹介します。",
+    name: "Meals App",
+    file: "meals-app.dart",
+    description: "A Flutter mobile app demo.",
+    jaName: "Meals App",
+    jaDescription: "Flutterで開発したモバイルアプリのデモです。",
     tags: ["Flutter", "Mobile"],
+    video: "/videos/meals_app.mp4",
+    github: "https://github.com/Alex2518-9/Meals_app",
   },
 ];

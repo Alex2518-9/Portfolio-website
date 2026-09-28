@@ -402,6 +402,129 @@ body {
   align-content: flex-start;
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.project-video-trigger,
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-alt);
+  padding: 0.5rem 0.85rem 0.5rem 0.55rem;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.project-video-trigger:hover,
+.project-github-link:hover {
+  border-color: var(--accent);
+}
+
+.project-github-link {
+  padding: 0.72rem 0.95rem;
+  text-decoration: none;
+}
+
+.project-github-link svg {
+  width: 1rem;
+  height: 1rem;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.project-play-icon {
+  display: grid;
+  width: 1.65rem;
+  height: 1.65rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.project-play-icon svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-left: 2px;
+}
+
+.project-video-dialog {
+  position: fixed;
+  inset: 50% auto auto 50vw;
+  width: min(56rem, calc(100% - 2rem));
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+  padding: 1rem;
+  color: var(--text);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 40%);
+}
+
+.project-video-dialog::backdrop {
+  background: rgb(4 8 12 / 78%);
+  backdrop-filter: blur(5px);
+}
+
+.project-video-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.85rem;
+}
+
+.project-video-modal-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-video-close {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: none;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-alt);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.project-video-close svg {
+  width: 1rem;
+  height: 1rem;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+}
+
+.project-video-player {
+  display: block;
+  width: 100%;
+  max-height: calc(100dvh - 7rem);
+  aspect-ratio: 16 / 9;
+  border-radius: 0.65rem;
+  background: #000;
+  object-fit: contain;
+}
+
 :root[data-theme="light"] #documents .terminal-window pre {
   visibility: hidden;
 }
