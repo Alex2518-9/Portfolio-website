@@ -17,7 +17,7 @@ const facts = [
   },
   {
     label: "education",
-    value: "BSc, Budapest Univ. of Technology",
+    value: "BSc, Budapest Univ. of Business",
     jaLabel: "学歴",
     jaValue: "ブダペスト工科経済大学 学士",
   },
@@ -68,9 +68,11 @@ export default function About() {
                 <>
                   I started by studying finance and IT, and discovered frontend
                   development along the way — it was a natural fit. For the past{" "}
-                  <strong className="about-highlight">3.5 years</strong>
-                  , I&apos;ve worked as a{" "}
-                  <strong className="about-highlight">frontend developer</strong>{" "}
+                  <strong className="about-highlight">3.5 years</strong>,
+                  I&apos;ve worked as a{" "}
+                  <strong className="about-highlight">
+                    frontend developer
+                  </strong>{" "}
                   at
                   <strong className="about-highlight">
                     {" "}
@@ -79,8 +81,8 @@ export default function About() {
                   , building and maintaining{" "}
                   <strong className="about-highlight">Snowray</strong>, a
                   responsive web app used daily by hospitals and other medical
-                  institutions. I&apos;ve worked closely with designers and backend
-                  engineers across a distributed team.
+                  institutions. I&apos;ve worked closely with designers and
+                  backend engineers across a distributed team.
                 </>
               )}
             </p>
@@ -102,13 +104,14 @@ export default function About() {
                   Since moving to{" "}
                   <strong className="about-highlight">Tokyo</strong>, I&apos;ve
                   been learning
-                  <strong className="about-highlight"> Japanese</strong>
-                  and getting more familiar with the local tech scene. I&apos;m now
+                  <strong className="about-highlight"> Japanese</strong> and
+                  getting more familiar with the local tech scene. I&apos;m now
                   expanding from web into mobile with{" "}
-                  <strong className="about-highlight">Flutter</strong>, while also
-                  building my <strong className="about-highlight">Python</strong>{" "}
-                  skills so I can contribute to a wider range of products people
-                  use every day.
+                  <strong className="about-highlight">Flutter</strong>, while
+                  also building my{" "}
+                  <strong className="about-highlight">Python</strong> skills so
+                  I can contribute to a wider range of products people use every
+                  day.
                 </>
               )}
             </p>
