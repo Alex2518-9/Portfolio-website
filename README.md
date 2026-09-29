@@ -1,6 +1,6 @@
 # Alex Téringer — Portfolio
 
-Personal portfolio website for Alex Téringer, a frontend and mobile developer based in Tokyo, Japan. The site introduces my experience, skills, selected projects, resume, and contact details.
+Personal portfolio website for a frontend and mobile developer based in Tokyo, Japan. The site introduces my experience, skills, selected projects, resume, and contact details.
 
 **Live site:** [teringer-alex-dev.vercel.app](https://teringer-alex-dev.vercel.app/)
 
