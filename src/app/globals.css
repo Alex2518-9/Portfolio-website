@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Theme palette: terminal-inspired dark defaults, with a softer botanical light theme. */
 :root {
   --ink: #0b0f14;
   --surface: #111720;
@@ -13,12 +14,14 @@
   --page-width: 56rem;
 }
 
+/* Keep project rows aligned on wider light-theme layouts. */
 @media (min-width: 641px) {
   :root[data-theme="light"] #work .terminal-window ul {
     min-height: 1.625rem;
   }
 }
 
+/* Light theme palette overrides. */
 :root[data-theme="light"] {
   --ink: #f6f7f4;
   --surface: #ffffff;
@@ -31,6 +34,7 @@
   --ok: #98533f;
 }
 
+/* Expose theme variables as Tailwind colors and font families. */
 @theme inline {
   --color-ink: var(--ink);
   --color-surface: var(--surface);
@@ -45,10 +49,12 @@
   --font-sans: var(--font-inter);
 }
 
+/* Use the shared divider color for default borders throughout the page. */
 * {
   border-color: var(--line);
 }
 
+/* Smooth anchor navigation and let the active theme control native surfaces. */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
@@ -59,6 +65,7 @@ html[data-theme="light"] {
   color-scheme: light;
 }
 
+/* Dark theme canvas: a quiet dotted texture behind the terminal-like content. */
 body {
   background: var(--ink);
   background-image: radial-gradient(var(--line) 1px, transparent 1px);
@@ -68,6 +75,7 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+/* Light theme replaces the dotted canvas with soft, restrained color washes. */
 :root[data-theme="light"] body {
   background-color: var(--ink);
   background-image:
@@ -77,6 +85,7 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+/* Keep Tailwind utility colors in sync with the active light palette. */
 :root[data-theme="light"] .bg-ink {
   background-color: var(--ink);
 }
@@ -113,6 +122,7 @@ body {
   border-color: var(--line);
 }
 
+/* Light-theme typography and terminal surfaces use a cleaner sans-serif treatment. */
 :root[data-theme="light"] h1,
 :root[data-theme="light"] h2,
 :root[data-theme="light"] h3 {
@@ -149,6 +159,7 @@ body {
   padding: 1.25rem;
 }
 
+/* Restyle the navigation as a translucent floating pill in light mode. */
 :root[data-theme="light"] header {
   border-color: transparent;
   background: transparent;
@@ -184,6 +195,7 @@ body {
   background: var(--surface-alt);
 }
 
+/* Align anchor targets below the fixed navigation and style section eyebrows. */
 :root[data-theme="light"] main > section {
   scroll-margin-top: 6rem;
 }
@@ -232,6 +244,7 @@ body {
   content: "";
 }
 
+/* Hero portrait and introduction sit side by side until the mobile breakpoint. */
 .hero-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 10rem;
@@ -260,6 +273,7 @@ body {
   box-shadow: 0 18px 48px rgb(39 58 49 / 14%);
 }
 
+/* Swap the terminal profile for a compact, readable data grid in light mode. */
 :root[data-theme="light"] .dark-profile {
   display: none;
 }
@@ -308,6 +322,7 @@ body {
   font-weight: 600;
 }
 
+/* Light-theme refinements for hero actions, about details, and skill groups. */
 :root[data-theme="light"] #top > div:last-child a {
   border-radius: 999px;
   font-family: var(--font-sans), system-ui, sans-serif;
@@ -402,6 +417,7 @@ body {
   align-content: flex-start;
 }
 
+/* Project cards: responsive media layout, action controls, and video modal. */
 .project-actions {
   display: flex;
   flex-wrap: wrap;
@@ -579,6 +595,7 @@ body {
   object-fit: contain;
 }
 
+/* Replace terminal styling with document and contact panels in light mode. */
 :root[data-theme="light"] #documents .terminal-window pre {
   visibility: hidden;
 }
@@ -703,6 +720,7 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+/* Stack hero, profile, document, and contact layouts on narrow screens. */
 @media (max-width: 640px) {
   .hero-intro {
     grid-template-columns: minmax(0, 1fr);
@@ -783,6 +801,7 @@ body {
   }
 }
 
+/* Visible keyboard focus and selection colors follow the active accent. */
 ::selection {
   background: var(--accent);
   color: var(--accent-ink);
@@ -842,6 +861,7 @@ button:focus-visible {
   animation: rise-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+/* About-section fact list and highlighted inline details. */
 .about-facts {
   align-self: center;
   font-family: var(--font-sans), system-ui, sans-serif;
