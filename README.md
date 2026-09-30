@@ -70,7 +70,7 @@ public/
 - Update resume and work-history links and labels in [`src/data/documents.ts`](src/data/documents.ts); place corresponding PDFs in `public/documents/`.
 - Edit biography and quick facts in [`src/components/About.tsx`](src/components/About.tsx).
 - Update contact details and social links in [`src/components/Contact.tsx`](src/components/Contact.tsx).
-- Update page metadata in [`src/app/layout.tsx`](src/app/layout.tsx) and the canonical site URL in [`src/lib/site.ts`](src/lib/site.ts).
+- Update page metadata and profile structured data in [`src/app/layout.tsx`](src/app/layout.tsx), and the canonical site URL in [`src/lib/site.ts`](src/lib/site.ts).
 - Adjust colors and design tokens in [`src/app/globals.css`](src/app/globals.css).
 
 ## Deployment
